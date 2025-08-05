@@ -1,22 +1,19 @@
-package com.hackertonapp
+package com.hackertonapp;
 
-import com.facebook.react.ReactActivity
-import com.facebook.react.ReactActivityDelegate
-import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint.fabricEnabled
-import com.facebook.react.defaults.DefaultReactActivityDelegate
+import android.os.Bundle;
+import org.devio.rn.splashscreen.SplashScreen; // 반드시 있어야 함
+import com.facebook.react.ReactActivity;
 
-class MainActivity : ReactActivity() {
+public class MainActivity extends ReactActivity {
 
-  /**
-   * Returns the name of the main component registered from JavaScript. This is used to schedule
-   * rendering of the component.
-   */
-  override fun getMainComponentName(): String = "hackertonApp"
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    SplashScreen.show(this); // 이것도 있어야 함
+    super.onCreate(savedInstanceState);
+  }
 
-  /**
-   * Returns the instance of the [ReactActivityDelegate]. We use [DefaultReactActivityDelegate]
-   * which allows you to enable New Architecture with a single boolean flags [fabricEnabled]
-   */
-  override fun createReactActivityDelegate(): ReactActivityDelegate =
-      DefaultReactActivityDelegate(this, mainComponentName, fabricEnabled)
+  @Override
+  protected String getMainComponentName() {
+    return "hackertonapp"; // ✅ 앱 이름 정확히 입력
+  }
 }
