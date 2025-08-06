@@ -16,6 +16,7 @@
     "@react-navigation/native-stack": "^7.3.23",
     "react": "19.1.0",
     "react-native": "0.80.2",
+    "react-native-cameraroll": "^1.0.0-alpha2",
     "react-native-fs": "^2.20.0",
     "react-native-gesture-handler": "^2.27.2",
     "react-native-reanimated": "^4.0.0",

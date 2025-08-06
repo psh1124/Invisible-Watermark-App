@@ -20,7 +20,7 @@ export default function App() {
         <Stack.Screen name="Profile">
           {(props) => <ProfileScreen {...props} />}
         </Stack.Screen>
-        <Stack.Screen name="WatermarkEmbeding" component={WatermarEmbedingScreen} />
+        {/* <Stack.Screen name="WatermarkEmbeding" component={WatermarEmbedingScreen} /> */}
         <Stack.Screen name="WatermarkDetection" component={WatermarkDetectionScreen} />
       </Stack.Navigator>
     </NavigationContainer>

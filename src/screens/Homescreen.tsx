@@ -90,7 +90,7 @@ export default function HomeScreen({ navigation }: Props) {
           {/* 업데이트한 친구 */}
           <View style={styles.sectionBox}>
             <View style={styles.sectionRow}>
-              <Text style={styles.sectionTitle}>업데이트한 프로필 10</Text>
+              <Text style={styles.sectionTitle}>업데이트한 프로필 2</Text>
             </View>
             <FlatList
               data={updateFriends}

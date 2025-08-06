@@ -1,6 +1,4 @@
-// src/screens/WatermarkEmbedingScreen.tsx
-
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   View, Text, TouchableOpacity, StyleSheet, SafeAreaView, StatusBar,
   Image, Alert, ScrollView
